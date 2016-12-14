@@ -1,112 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-    <meta charset="utf-8" />
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template (Edited by Kelsey Metheny 12/14/16)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-header, footer {
-    padding: 1em;
-    color: #4F9B4E;
-    background-color: #FDFEFE  ;
-    clear: left;
-    text-align: center;
-
-    <title>Kelsey's Tiny Corner</title>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
-</head>
+<body>
 
-    <!--Formatting for most of the page, covers background image, links, and the main text color-->
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+  <li class="w3-hide-small"><a href="#band" class="w3-padding-large">ABOUT</a></li>
+  <li class="w3-hide-small"><a href="#tour" class="w3-padding-large">WATER ACTIVITES</a></li>
+  <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">GALLERY</a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>     
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">DIRECTIONS</a>
 
-<body background="#4F9B4E" text="white">
-    <font face="Verdana Bold">
-<!--Table for the webpage, nested table in top cell-->
-    <table border="8" bordercolor="silver" height="90%" width="100%" bgcolor="#4F9B4E" >
-        <tr>
-            <td colspan="2" valign="CENTER" align="CENTER">
-                <table border="1" bordercolor="#4F9B4E" width="100%" bgcolor="#4F9B4E">
-                    <tr>
-                        <td WIDTH="30%" ALIGN="CENTER"><img src="http://cdn.paper4pc.com/images/ricketts-glen-state-park-pennsylvania-pennsylvania-waterfall-river-forest-autumn-stones-wallpaper-1.jpg" height = "200" width = "300">
-                        </td>
-                        <td align="CENTER" valign="CENTER" width="40%">
-                            <header><font size="12" color="#4F9B4E""><u>Ohiopyle</u></font>
-                            <p><font size="4"><i><b>Pittsburgh's Perfect Escape</b></i></font></p></header>
-                        </td>
-                        <td WIDTH="30%" ALIGN="CENTER"><img src="http://blog.martinbelan.com/wp-content/uploads/2013/11/OhioPyle_20131024_0003.jpg" height= "200" width = "300"></header></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td valign="Top" Width="20%">
-           
-           <menu>
+    </div>
+  </li>
 
-        <ol><h4>
-            <p><li><a href="index.html"  style="color: silver">About</li></a></p>
-            <p><li><a href="watersports.html"  style="color: silver">Water Activities</li></a></p>
-            <p><li><a href="trails.html"  style="color: silver">Dry Land Recreation</li></a></p>
-      
-</body>
-            </h4>
-            </ol>
-        </menu>
-
-            </td>
-            <td width="80%">
-      <body bgcolor="#4F9B4E">
-    <!-- I like to make things a table so I can work with it easier -->
-    <table>
-        <!-- Row One-->
-        <tr>
-  <td>
-     
-  <Center><h1>About:</h1></center>
-
-
-  <div class = "w3-container">         
- <img src="https://s3.amazonaws.com/gs-waymarking-images/482aa5c8-42e0-4c6c-afe6-b28ec7e4279f.jpg" style="float:right;width:300px;height:200px;">
-
-<font size= "4"> <p>  Ohiopyle State Park is an easy 75 minute drive, south west of campus. Located on the Laurel Ridge, Ohiopyle encompasses over 20,000 acres of rushing waters and mountain views. It is the perfect escape from the hustle and bustle of Oakland. So grab a group of friends and make a day or weekend trip to the great outdoors.  </font></p> 
+</ul>
 </div>
-</td>
-</tr>
-<tr>
-<td>
-<h1> <Center> History: </Center></h1>
-<div class="w3-container"><p><font size = "4"> The name Ohiopyle is derived from the American Indian word <i>Ohiopehelle</i> meaning “white, frothy water”. This phrase perfectly describes the Youghiogheny River Gorge that runs through the heart of the park. These Youghiogheny river banks have witnessed many historical events. Fort Necessity is only a few miles away from the park and was the location of the first  battle in the French and Indian War in 1754. Then in 1791, farmers in western Pennsylvania were angered by a tax on Whiskey. These farmers united and attacked against tax collectors. The Whiskey Rebellion ended when George Washington and a militia marched to Ohiopyle.</Font> </p> </div>
+ <!-- end nav bar. put on every page--!>
+ <!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-                       </td>
-                        </tr>
-                        <!--Row two is those required definition lists-->
-                        <tr>
-<td>
-                           
-          <h1><center>Activities Include:</center></h1>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Ohiopyle_Falls2.jpg"  style="float:right;width:300px;height:200px;/> 
+<!-- Header --> 
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img src="http://blog.martinbelan.com/wp-content/uploads/2013/11/OhioPyle_20131024_0003.jpg" width="1500" height="1000"> <!-- Background -->
 
-                    <center>
-                    <div class="w3-container">
-                            <li><u>Hiking</u></li>
-                            <li><u>Rafting</u></li>
-                            <li><u>Camping</u></li>
-                            <li><u>Kayaking</u></li>
-                            <li><u>Natural Waterslide</u></li>
-                            <li><u>Biking</u></li> </font>
-<font size="3">* Seasonal Conditions Apply *</font></center> 
-</div>
 
-</tr>
-                    
-                     
-    </table>
-<footer>
-Photos for Educational Purposes Courtesy of:
-<right>
-<a href="http://www.wallpaperup.com/member/profile/1115"  style="color: blue">thegates</a>
-,<a href="http://blog.martinbelan.com/2013/11/photographing-waterfalls-at-ohiopyle-state-park-pennsylvania/"  style="color: blue">Martin Belan</a>,
-<a href="http://www.waymarking.com/waymarks/WMFPTC_Ohiopyle_State_Park_Ohiopyle_Pennsylvania"  style="color: blue">outdoorboy34</a>,
-,<a href="http://www.destination360.com/north-america/us/pennsylvania/pennsylvania-rafting"  style="color: blue">Pennsylvania Rafting</a>.
-</right>
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-</footer>
+<div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>OHIO PYLE</b></span> 
+ <h3> <i> <span class="w3-hide-small w3-text-light-grey">Pittsburgh's Perfect Escape</span></i></h3>
+  </div>
+</header>
 
-</font>
