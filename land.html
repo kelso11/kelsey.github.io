@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>Water</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="W3.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+  <li class="w3-hide-small"><a href="about.html" class="w3-padding-large">ABOUT</a></li>
+  <li class="w3-hide-small"><a href="land.html" class="w3-padding-large">LAND</a></li>
+  <li class="w3-hide-small"><a href="water.html" class="w3-padding-large">WATER</a></li>
+   <li class="w3-hide-small"><a href="gallery.html" class="w3-padding-large">GALLERY</a></li>
+   <li class="w3-hide-small"><a href="directions.html" class="w3-padding-large">DIRECTIONS</a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>     
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Merchandise</a>
+      <a href="#">Extras</a>
+      <a href="#">Media</a>
+    </div>
+  </li>
+  <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
+</ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="index.html">HOME</a></li>
+    <li><a class="w3-padding-large" href="about.html">ABOUT</a></li>
+    <li><a class="w3-padding-large" href="land.html">LAND</a></li>
+    <li><a class="w3-padding-large" href="water.html">WATER</a></li>
+    <li><a class="w3-padding-large" href="gallery.html">GALLERY</a></li>
+    <li><a class="w3-padding-large" href="directions.html">DIRECTIONS</a></li>
+  </ul>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <img src="ohiopyle-camping.jpg" style="width:100%">
+   
+  </div>
+ 
+
+  <!-- Dry Land Recreation -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Dry Land Recreaction</h2>
+    <p class="w3-opacity"><i>Beyond water sports, Ohiopyle is the perfect place to enjoy natures beauty. Enjoy miles of trails for hiking, horseback riding, biking, and snowmobiling. Pack a lunch and enjoy the multiple picnic areas throughout the park. Watch wildlife in the designated Important Mammal Area and Important Bird Area. Grab your ropes and climb on the mountain ridge. Ohiopyle offers activities year round for every outdoor enthusiast. I will highlight my favorite activities below.</i></p>
+    <p class="w3-justify"</p>
+  
+      
+    </div>
+  </div>
+
+  <!-- Hiking -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">HIKING</h2>
+     
+    <p class="w3-opacity"><i>Over <a href="http://www.discoverohiopyle.com/hiking-in-ohiopyle.html"  style="color:white">75 hiking trails</a> are available throughout the state park. The Laurel Highlands is stunning any time of year with trails ranging from beginners to expert. Day trips are common, however, shelters are provided for overnight backpackers. Camping is also permitted in designated sections of the park.</p>
+    <p class="w3-opacity">My favorite hike includes visiting Cucumber Falls.  The falls itself are easy to get to and is a <i>must see</i> when visiting Ohiopyle. The 30 foot tall waterfall is impressive at any water level. Wear shoes you don’t mind getting wet and venture behind the waterfall for extraordinary  pictures. 
+    </i></p>
+    <p class="w3-justify"</p>
+    <div class="w3-row w3-padding-32">
+        
+        <img src="ohiopyle-camping.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:70%">
+      </div>
+
+    </div>
+  </div>
+  <!-- raftinf -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">BIKING</h2>
+    <p class="w3-opacity"><i>Biking is another activity that can accommodate all skill levels. The Great Allegheny Passage Rail-Trail offers a flat relaxing terrain. The trail actually starts in Pittsburgh and ends in Cumberland, MD. Bike rentals are available. </i></p>
+    <p class="w3-opacity"><i>Mountain biking is another option for those seeking a little thrills. Multiple trails are available for mountain bikes, however, they are shared with other users. Caution is advised. Technical difficulty is high on multiple trails, therefore, it is recommended for intermediate and expert riders. </i></p>
+    
+    
+  </div>
+    
+  <!--  -->
+  
+      
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+ The Purpose of this Site is Educational Purposes Only</a></p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
