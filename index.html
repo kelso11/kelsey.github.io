@@ -1,49 +1,161 @@
+
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template (Edited by Kelsey Metheny 12/14/16)</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<title>Chinese Hot Pot in Pittsburgh</title>
+<script type="text/javascript">
+// <![CDATA[
+var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc"); // colours for top, right, bottom and left borders and background of bubbles
+var bubbles=66; // maximum number of bubbles on screen
+var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
+
+
+
+
+
+
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+}
+
+window.onscroll=set_scroll;
+function set_scroll() {
+  if (typeof(self.pageYOffset)=='number') {
+    sdown=self.pageYOffset;
+    sleft=self.pageXOffset;
+  }
+  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+    sdown=document.body.scrollTop;
+    sleft=document.body.scrollLeft;
+  }
+  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+    sleft=document.documentElement.scrollLeft;
+    sdown=document.documentElement.scrollTop;
+  }
+  else {
+    sdown=0;
+    sleft=0;
+  }
+}
+
+function createDiv(height, width) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height;
+  div.style.width=width;
+  div.style.overflow="hidden";
+  div.style.backgroundColor="transparent";
+  return (div);
+}
+// ]]>
+</script>
+
+</head>
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+html {
+background: url(http://blog.martinbelan.com/wp-content/uploads/2013/11/OhioPyle_20131024_0003.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+#nav {
+    background-color: #222;
+}
+#nav_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 200px;
+}
+#nav ul li {
+    display: inline-block;
+}
+#nav ul li:hover {
+    background-color: #333;
+}
+#nav ul li a, visited {
+    color: #CCC;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#nav ul li:hover ul {
+    display: block;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 5px solid #222;
+    border-top: 0;
+    margin-left: -5px;
+}
+#nav ul ul li {
+    display: block;
+}
+#nav ul ul li a:hover {
+    color: #699;
+}
 </style>
 <body>
+<div id="nav">
+    <div id="nav_wrapper">
+    
+        <ul>
+           <li><a href="index.html">HOME</a>
+            </li>        
+             <li> <a href="definition.html">ABOUT</a>
+            
+            </li>
+            <li> <a href="#">LAND</a>
 
-<!-- Navbar -->
-<div class="w3-top">
-<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
-  <li class="w3-hide-small"><a href="#band" class="w3-padding-large">ABOUT</a></li>
-  <li class="w3-hide-small"><a href="#tour" class="w3-padding-large">WATER ACTIVITES</a></li>
-  <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">GALLERY</a></li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>     
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#">DIRECTIONS</a>
+                
+            </li>
+             </li>
+            <li> <a href="#">WATER</a>
+
+            
+            <li><a href=>GALLERY</a>
+            </li> 
+              </li>
+            <li> <a href="#">DIRECTIONS</a>
+
 
     </div>
-  </li>
-
-</ul>
+   
+    <!-- Nav wrapper end -->
 </div>
- <!-- end nav bar. put on every page--!>
- <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-<!-- Header --> 
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img src="http://blog.martinbelan.com/wp-content/uploads/2013/11/OhioPyle_20131024_0003.jpg" width="1500" height="1000"> <!-- Background -->
-
-
-<div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>OHIO PYLE</b></span> 
- <h3> <i> <span class="w3-hide-small w3-text-light-grey">Pittsburgh's Perfect Escape</span></i></h3>
-  </div>
-</header>
+<!-- Nav end -->
+ <CENTER><B><H1> <font  color=#f2f2f2 SIZE = "15"  >OHIO PYLE</font></h1> <H4><I> <font color= #f2f2f2 >Pittsburgh's Perfect Escape</i>
+</body>
+</html>
 
