@@ -1,74 +1,44 @@
-
 <!DOCTYPE html>
 <html>
-<head>
 <title>About</title>
-<script type="text/javascript">
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="W3.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
+<body>
 
-function set_width() {
-  var sw_min=999999;
-  var sh_min=999999;
-  if (document.documentElement && document.documentElement.clientWidth) {
-    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
-    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
-  }
-  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
-    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
-    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
-  }
-  if (document.body.clientWidth) {
-    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
-    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
-  }
-  if (sw_min==999999 || sh_min==999999) {
-    sw_min=800;
-    sh_min=600;
-  }
-  swide=sw_min;
-  shigh=sh_min;
-}
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+  <li class="w3-hide-small"><a href="about.html" class="w3-padding-large">ABOUT</a></li>
+  <li class="w3-hide-small"><a href="land.html" class="w3-padding-large">LAND</a></li>
+  <li class="w3-hide-small"><a href="water.html" class="w3-padding-large">WATER</a></li>
+   <li class="w3-hide-small"><a href="gallery.html" class="w3-padding-large">GALLERY</a></li>
+   <li class="w3-hide-small"><a href="directions.html" class="w3-padding-large">DIRECTIONS</a></li>
+  
+  <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
+</ul>
+</div>
 
-window.onscroll=set_scroll;
-function set_scroll() {
-  if (typeof(self.pageYOffset)=='number') {
-    sdown=self.pageYOffset;
-    sleft=self.pageXOffset;
-  }
-  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
-    sdown=document.body.scrollTop;
-    sleft=document.body.scrollLeft;
-  }
-  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
-    sleft=document.documentElement.scrollLeft;
-    sdown=document.documentElement.scrollTop;
-  }
-  else {
-    sdown=0;
-    sleft=0;
-  }
-}
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="index.html">HOME</a></li>
+    <li><a class="w3-padding-large" href="about.html">ABOUT</a></li>
+    <li><a class="w3-padding-large" href="land.html">LAND</a></li>
+    <li><a class="w3-padding-large" href="water.html">WATER</a></li>
+    <li><a class="w3-padding-large" href="gallery.html">GALLERY</a></li>
+    <li><a class="w3-padding-large" href="directions.html">DIRECTIONS</a></li>
+  </ul>
+</div>
 
-function createDiv(height, width) {
-  var div=document.createElement("div");
-  div.style.position="absolute";
-  div.style.height=height;
-  div.style.width=width;
-  div.style.overflow="hidden";
-  div.style.backgroundColor="transparent";
-  return (div);
-}
-// ]]>
-</script>
-
-</head>
-<style>
 
 
 
